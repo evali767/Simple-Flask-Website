@@ -9,7 +9,8 @@ app = Flask(__name__)
 # this line handles re-directs in codio
 proxied = FlaskBehindProxy(app)
 
-app.config['SECRET_KEY'] =  os.getenv('SECRET_KEY')
+# app.config['SECRET_KEY'] =  os.getenv('SECRET_KEY')
+app.config['SECRET_KEY'] = '761028b2083b5b00fdf652c2423729a1'
  
 @app.route("/")
 @app.route("/home")
